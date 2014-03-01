@@ -3,12 +3,12 @@
 
 #include "CCApplication.h"
 
+#include "Packet.h"
 #include "MatchmakingClient.h"
 #include "MatchmakingServer.h"
 #include "MatchmakingProtocol.h"
 
-class  AppDelegate : private cocos2d::CCApplication, public MatchmakingClientProtocol, public MatchmakingServerProtocol
-{
+class  AppDelegate : private cocos2d::CCApplication, public MatchmakingClientProtocol, public MatchmakingServerProtocol {
 public:
     AppDelegate();
     virtual ~AppDelegate();
@@ -28,11 +28,15 @@ public:
 	
 	MatchmakingServer* matchmakingServer;
 	MatchmakingClient* matchmakingClient;
+	
 	void beServer();
 	void beClient();
     void joinServer(const char* peerID);
     void endSession();
     void disconnectFromServer();
+    void sendPacket(int role, PacketType type, const char* message);
+	void clientReceiveData(NSData* data, NSString* peerID);
+	void serverReceiveData(NSData* data, NSString* peerID);
 };
 
 #endif // _APP_DELEGATE_H_

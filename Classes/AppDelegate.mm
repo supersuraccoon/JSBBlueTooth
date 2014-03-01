@@ -14,7 +14,6 @@
 
 USING_NS_CC;
 
-
 AppDelegate::AppDelegate() {
 }
 
@@ -63,9 +62,45 @@ void AppDelegate::disconnectFromServer() {
     }
 }
 
+void AppDelegate::sendPacket(int role, PacketType type, const char* message) {
+	CCLOG("AppDelegate::sendPacket");
+    CCLOG("role: %d -- type: %d -- message: %s", role, type, message);
+	Packet *packet = [Packet packetWithType:type message:[NSString stringWithFormat:@"%s", message]];
+	NSData *data = [packet data];
+	NSError *error;
+	if (role == 0) {
+		if (![matchmakingServer.session sendDataToAllPeers:data withDataMode:GKSendDataReliable error:&error]) {
+			NSLog(@"Error sending data to clients: %@", error);
+		}
+	}
+	else {
+		if (![matchmakingClient.session sendDataToAllPeers:data withDataMode:GKSendDataReliable error:&error]) {
+			NSLog(@"Error sending data to clients: %@", error);
+		}
+	}	
+}
+
 /*
-	client server delegate
+    client server delegate
  */
+void AppDelegate::clientReceiveData(NSData* data, NSString *peerID) {
+	CCLOG("AppDelegate::clientReceiveData");
+	Packet *packet = [Packet packetWithData:data];
+	if (packet == nil) {
+		return;
+	}
+    tirggerFuncWithString("clientReceiveData", packet.packetMessage);
+}
+
+void AppDelegate::serverReceiveData(NSData* data, NSString *peerID) {
+	CCLOG("AppDelegate::serverReceiveData");
+	Packet *packet = [Packet packetWithData:data];
+	if (packet == nil) {
+		return;
+	}
+    tirggerFuncWithString("serverReceiveData", packet.packetMessage);
+}
+
 void AppDelegate::serverBecameAvailable(MatchmakingClient* client, NSString* peerID) {
     CCLOG("AppDelegate::serverBecameAvailable");
     tirggerFuncWithString("serverBecameAvailable", peerID);
@@ -77,7 +112,7 @@ void AppDelegate::serverBecameUnavailable(MatchmakingClient* client, NSString* p
 void AppDelegate::didDisconnectFromServer(MatchmakingClient* client, NSString* peerID) {
     CCLOG("AppDelegate::didDisconnectFromServer");
 	tirggerFuncWithString("didDisconnectFromServer", peerID);
-    matchmakingClient = NULL;
+    //matchmakingClient = NULL;
 }
 void AppDelegate::clientNoNetwork(MatchmakingClient* client) {
     CCLOG("AppDelegate::clientNoNetwork");

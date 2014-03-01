@@ -230,6 +230,18 @@
 		3EC20B8618331D7400F2C4D6 /* jsb_cocos2d_studio.js in Resources */ = {isa = PBXBuildFile; fileRef = 3EC20B7C18331CA200F2C4D6 /* jsb_cocos2d_studio.js */; };
 		A334915218BE19D200E76A03 /* MatchmakingClient.mm in Sources */ = {isa = PBXBuildFile; fileRef = A334914F18BE19D200E76A03 /* MatchmakingClient.mm */; };
 		A334915318BE19D200E76A03 /* MatchmakingServer.mm in Sources */ = {isa = PBXBuildFile; fileRef = A334915118BE19D200E76A03 /* MatchmakingServer.mm */; };
+		A34167D118C0C33F00FF1338 /* Packet.m in Sources */ = {isa = PBXBuildFile; fileRef = A34167CD18C0C33F00FF1338 /* Packet.m */; };
+		A34167D218C0C33F00FF1338 /* NSData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A34167CE18C0C33F00FF1338 /* NSData+Additions.m */; };
+		A34DE3FE18C1DFA00092EA6F /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = A34DE3F418C1DFA00092EA6F /* Icon-72.png */; };
+		A34DE3FF18C1DFA00092EA6F /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A34DE3F518C1DFA00092EA6F /* Icon-72@2x.png */; };
+		A34DE40018C1DFA00092EA6F /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = A34DE3F618C1DFA00092EA6F /* Icon-Small-50.png */; };
+		A34DE40118C1DFA00092EA6F /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A34DE3F718C1DFA00092EA6F /* Icon-Small-50@2x.png */; };
+		A34DE40218C1DFA00092EA6F /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = A34DE3F818C1DFA00092EA6F /* Icon-Small.png */; };
+		A34DE40318C1DFA00092EA6F /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A34DE3F918C1DFA00092EA6F /* Icon-Small@2x.png */; };
+		A34DE40418C1DFA00092EA6F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A34DE3FA18C1DFA00092EA6F /* Icon.png */; };
+		A34DE40518C1DFA00092EA6F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A34DE3FB18C1DFA00092EA6F /* Icon@2x.png */; };
+		A34DE40618C1DFA00092EA6F /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = A34DE3FC18C1DFA00092EA6F /* iTunesArtwork.png */; };
+		A34DE40718C1DFA00092EA6F /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A34DE3FD18C1DFA00092EA6F /* iTunesArtwork@2x.png */; };
 		A37EC9A618BF7261005AA08A /* GlobalJsFunc.mm in Sources */ = {isa = PBXBuildFile; fileRef = A37EC9A418BF7261005AA08A /* GlobalJsFunc.mm */; };
 		A3A8500218BCD207004BCCA7 /* cocos2d-jsb.js in Sources */ = {isa = PBXBuildFile; fileRef = A3A8500118BCD207004BCCA7 /* cocos2d-jsb.js */; };
 		A3A8500318BCD223004BCCA7 /* cocos2d-jsb.js in Resources */ = {isa = PBXBuildFile; fileRef = A3A8500118BCD207004BCCA7 /* cocos2d-jsb.js */; };
@@ -700,6 +712,20 @@
 		A334914F18BE19D200E76A03 /* MatchmakingClient.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MatchmakingClient.mm; sourceTree = "<group>"; };
 		A334915018BE19D200E76A03 /* MatchmakingServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchmakingServer.h; sourceTree = "<group>"; };
 		A334915118BE19D200E76A03 /* MatchmakingServer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MatchmakingServer.mm; sourceTree = "<group>"; };
+		A34167CD18C0C33F00FF1338 /* Packet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Packet.m; sourceTree = "<group>"; };
+		A34167CE18C0C33F00FF1338 /* NSData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Additions.m"; sourceTree = "<group>"; };
+		A34167CF18C0C33F00FF1338 /* NSData+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Additions.h"; sourceTree = "<group>"; };
+		A34167D018C0C33F00FF1338 /* Packet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Packet.h; sourceTree = "<group>"; };
+		A34DE3F418C1DFA00092EA6F /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		A34DE3F518C1DFA00092EA6F /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		A34DE3F618C1DFA00092EA6F /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		A34DE3F718C1DFA00092EA6F /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		A34DE3F818C1DFA00092EA6F /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		A34DE3F918C1DFA00092EA6F /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		A34DE3FA18C1DFA00092EA6F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A34DE3FB18C1DFA00092EA6F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		A34DE3FC18C1DFA00092EA6F /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		A34DE3FD18C1DFA00092EA6F /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		A37EC9A318BF7261005AA08A /* GlobalJsFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalJsFunc.h; sourceTree = "<group>"; };
 		A37EC9A418BF7261005AA08A /* GlobalJsFunc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GlobalJsFunc.mm; sourceTree = "<group>"; };
 		A37EC9A518BF7261005AA08A /* MatchmakingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchmakingProtocol.h; sourceTree = "<group>"; };
@@ -759,6 +785,16 @@
 		15628F5B15F0F5C2000CF24B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A34DE3F418C1DFA00092EA6F /* Icon-72.png */,
+				A34DE3F518C1DFA00092EA6F /* Icon-72@2x.png */,
+				A34DE3F618C1DFA00092EA6F /* Icon-Small-50.png */,
+				A34DE3F718C1DFA00092EA6F /* Icon-Small-50@2x.png */,
+				A34DE3F818C1DFA00092EA6F /* Icon-Small.png */,
+				A34DE3F918C1DFA00092EA6F /* Icon-Small@2x.png */,
+				A34DE3FA18C1DFA00092EA6F /* Icon.png */,
+				A34DE3FB18C1DFA00092EA6F /* Icon@2x.png */,
+				A34DE3FC18C1DFA00092EA6F /* iTunesArtwork.png */,
+				A34DE3FD18C1DFA00092EA6F /* iTunesArtwork@2x.png */,
 				A3A8500118BCD207004BCCA7 /* cocos2d-jsb.js */,
 				1AE4B40116D1FECD003C6D1C /* res */,
 				1AE4B40216D1FECD003C6D1C /* src */,
@@ -1627,6 +1663,10 @@
 		D4545214156E28EF00887EB5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A34167CD18C0C33F00FF1338 /* Packet.m */,
+				A34167CE18C0C33F00FF1338 /* NSData+Additions.m */,
+				A34167CF18C0C33F00FF1338 /* NSData+Additions.h */,
+				A34167D018C0C33F00FF1338 /* Packet.h */,
 				A37EC9A318BF7261005AA08A /* GlobalJsFunc.h */,
 				A37EC9A418BF7261005AA08A /* GlobalJsFunc.mm */,
 				A37EC9A518BF7261005AA08A /* MatchmakingProtocol.h */,
@@ -1712,7 +1752,10 @@
 				A3A8500318BCD223004BCCA7 /* cocos2d-jsb.js in Resources */,
 				3EC20B8618331D7400F2C4D6 /* jsb_cocos2d_studio.js in Resources */,
 				1A5E740017F0870800B9ACAE /* jsb_deprecated.js in Resources */,
+				A34DE40618C1DFA00092EA6F /* iTunesArtwork.png in Resources */,
+				A34DE40018C1DFA00092EA6F /* Icon-Small-50.png in Resources */,
 				1AA51AEB16F71C3D000FDF05 /* jsb_chipmunk_constants.js in Resources */,
+				A34DE40218C1DFA00092EA6F /* Icon-Small.png in Resources */,
 				1AA51AEC16F71C3D000FDF05 /* jsb_cocos2d_constants.js in Resources */,
 				1AA51AED16F71C3D000FDF05 /* jsb_opengl_constants.js in Resources */,
 				1A4B645416EE24A80025FE93 /* jsb_cocos2d_extension.js in Resources */,
@@ -1720,8 +1763,12 @@
 				1A2757BE1697FBE500504026 /* jsb_chipmunk.js in Resources */,
 				1A2757BF1697FBE500504026 /* jsb_cocos2d.js in Resources */,
 				1A2757C01697FBE500504026 /* jsb_cocosbuilder.js in Resources */,
+				A34DE40518C1DFA00092EA6F /* Icon@2x.png in Resources */,
+				A34DE40118C1DFA00092EA6F /* Icon-Small-50@2x.png in Resources */,
+				A34DE3FE18C1DFA00092EA6F /* Icon-72.png in Resources */,
 				1A2757C11697FBE500504026 /* jsb_debugger.js in Resources */,
 				1A2757C21697FBE500504026 /* jsb_opengl.js in Resources */,
+				A34DE3FF18C1DFA00092EA6F /* Icon-72@2x.png in Resources */,
 				1A2757C31697FBE500504026 /* jsb_sys.js in Resources */,
 				1A2757C41697FBE500504026 /* jsb.js in Resources */,
 				D446FDA316102D7D000ADA7B /* Default.png in Resources */,
@@ -1733,6 +1780,9 @@
 				1AE4B40516D1FECD003C6D1C /* src in Resources */,
 				1A5E74CF17F0874400B9ACAE /* json_internalarray.inl in Resources */,
 				1A5E74D017F0874400B9ACAE /* json_internalmap.inl in Resources */,
+				A34DE40718C1DFA00092EA6F /* iTunesArtwork@2x.png in Resources */,
+				A34DE40318C1DFA00092EA6F /* Icon-Small@2x.png in Resources */,
+				A34DE40418C1DFA00092EA6F /* Icon.png in Resources */,
 				1A5E74D317F0874400B9ACAE /* json_valueiterator.inl in Resources */,
 				1A5E74D517F0874400B9ACAE /* sconscript in Resources */,
 			);
@@ -1784,6 +1834,7 @@
 				15A3D3921682F0B6002FB0C5 /* cpGrooveJoint.c in Sources */,
 				15A3D3931682F0B6002FB0C5 /* cpPinJoint.c in Sources */,
 				15A3D3941682F0B6002FB0C5 /* cpPivotJoint.c in Sources */,
+				A34167D118C0C33F00FF1338 /* Packet.m in Sources */,
 				3EC20B8118331CB000F2C4D6 /* jsb_cocos2dx_studio_auto_api.js in Sources */,
 				15A3D3951682F0B6002FB0C5 /* cpRatchetJoint.c in Sources */,
 				15A3D3961682F0B6002FB0C5 /* cpRotaryLimitJoint.c in Sources */,
@@ -1962,6 +2013,7 @@
 				1A5E74CD17F0874400B9ACAE /* CSContentJsonDictionary.cpp in Sources */,
 				1A5E74CE17F0874400B9ACAE /* DictionaryHelper.cpp in Sources */,
 				1A5E74D117F0874400B9ACAE /* json_reader.cpp in Sources */,
+				A34167D218C0C33F00FF1338 /* NSData+Additions.m in Sources */,
 				1A5E74D217F0874400B9ACAE /* json_value.cpp in Sources */,
 				1A5E74D417F0874400B9ACAE /* json_writer.cpp in Sources */,
 			);

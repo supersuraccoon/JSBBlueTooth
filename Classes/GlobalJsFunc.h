@@ -13,6 +13,7 @@ JSBool beClient(JSContext *cx, uint32_t argc, jsval *vp);
 JSBool joinServer(JSContext *cx, uint32_t argc, jsval *vp);
 JSBool endSession(JSContext *cx, uint32_t argc, jsval *vp);
 JSBool disconnectFromServer(JSContext *cx, uint32_t argc, jsval *vp);
+JSBool sendPacket(JSContext *cx, uint32_t argc, jsval *vp);
 
 void tirggerFunc(string funcToTrigger);
 void tirggerFuncWithString(string funcToTrigger, NSString *message);

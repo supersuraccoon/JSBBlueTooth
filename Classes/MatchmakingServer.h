@@ -1,8 +1,7 @@
 
 #import <GameKit/GameKit.h>
 
-typedef enum
-{
+typedef enum {
 	ServerStateIdle,
 	ServerStateAcceptingConnections,
 	ServerStateIgnoringNewConnections,
